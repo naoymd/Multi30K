@@ -1,0 +1,33 @@
+# general settings
+epoch_num: 2000
+batch_size: 100
+num_workers: 0
+fix_length: 10
+min_freq: 1
+embed_size: 100
+seed: 0
+
+# rnn settings
+rnn: Transformer
+bidirection: False
+num_layers: 1
+hidden_size: 128
+skip: False
+nhead: 4
+dropout: 0.0
+
+# attention settings
+self_attention: False
+qkv_linear: True
+mask: False
+scaled: True
+output_mode: "concat"
+
+# optimizer settings
+learning_rate: 1e-6
+min_learning_rate: 1e-10
+patience: 50
+cooldown: 10
+factor: 0.1
+weight_decay: 1e-4
+clip: 0.5
